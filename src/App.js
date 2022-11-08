@@ -17,7 +17,7 @@ const App = () => {
   console.log(state)
   
   const getProductData = async () => {
-    let res = await fetch("http://localhost:4000/products");
+    let res = await fetch("https://my-json-server.typicode.com/vishnu-ot/data/products");
     let data = await res.json();
     return data
   };

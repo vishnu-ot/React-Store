@@ -2,6 +2,7 @@ import React, { useMemo } from "react";
 import { currencyFormatter } from "../util";
 import { Link } from "react-router-dom";
 import { useAppContext } from "../hooks/useAppContext";
+// import {images} from "../images"
 
 function ProductItem({ id, title, price, image }) {
   const {
@@ -44,9 +45,10 @@ function ProductItem({ id, title, price, image }) {
         <h3>{title}</h3>
       </div>
       <div className="itemPic">
-        <Link to={`/product/${id}`}>
-          <img src={`/images/${image}`} alt="" />
-        </Link>
+        {/* <Link to={`/product/${id}`}> */}
+        <img src={process.env.PUBLIC_URL + `/images/${image}`} alt="" />
+
+        {/* </Link> */}
       </div>
       <div className="itemMeta">
         <div className="itemPrice"> {formattedPrice} </div>
