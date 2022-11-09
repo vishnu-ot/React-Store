@@ -29,7 +29,7 @@ function CartItem({ id, title, image, price, count }) {
   return (
     <div className="cartItem">
       <div className="itemPic">
-        <img src={`/images/${image}`} alt="" />
+        <img src={process.env.PUBLIC_URL+`/images/${image}`} alt="" />
       </div>
       <div className="itemInfo">
         <p>{title}</p>

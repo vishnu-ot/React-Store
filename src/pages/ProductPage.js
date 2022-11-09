@@ -11,7 +11,7 @@ function ProductPage() {
 
   useEffect(() => {
     const getProduct = async () => {
-      let res = await fetch(`http://localhost:4000/products/${id}`);
+      let res = await fetch(`https://my-json-server.typicode.com/vishnu-ot/data/products/${id}`);
       let data = await res.json();
       setProduct(data);
     };
@@ -51,7 +51,7 @@ function ProductPage() {
 
   return (
     <div className="singleProduct">
-      <img src={`/images/${product?.image}`} alt="" />
+      <img src={process.env.PUBLIC_URL + `/images/${product?.image}`} alt="" />
       <div>
         <h1>{product?.title}</h1>
         <h3>{product && currencyFormatter(product?.price)}</h3>

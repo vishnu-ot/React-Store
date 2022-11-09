@@ -45,10 +45,10 @@ function ProductItem({ id, title, price, image }) {
         <h3>{title}</h3>
       </div>
       <div className="itemPic">
-        {/* <Link to={`/product/${id}`}> */}
+        <Link to={`/product/${id}`}>
         <img src={process.env.PUBLIC_URL + `/images/${image}`} alt="" />
 
-        {/* </Link> */}
+        </Link>
       </div>
       <div className="itemMeta">
         <div className="itemPrice"> {formattedPrice} </div>
