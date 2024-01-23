@@ -1,33 +1,22 @@
+## Shopping Cart - React
+This is a shopping cart demo, where we can add products to our cart , remove products from cart , increase and decrease cart items . Showing total number of items and total amount need to pay . State mangament is done by rect hooks like useReducer and useContext. 
+### Technologies used : 
+React and its various hooks like 
+- useState
+- useEffect
+- useMemo
+- useCallback
+- React Router DOM
+- useReducer
+- useContext
+- axios is used to call web api
+- Tailwind CSS is used to explore the style sections
+### The app is looks like 
 
 
-## Available Scripts
 
-In the project directory, you can run:
+[<img src="https://img.youtube.com/vi/131xI5u1MRA/hqdefault.jpg" width="600" height="300"
+/>](https://www.youtube.com/embed/131xI5u1MRA)
 
 
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npx json-server --watch src/data.json --port 4000`
-    Data is stored in this server . so please execute this line after npm start command
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    
